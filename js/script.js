@@ -1,37 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Sitio cargando correctamente");
+const btnTop = document.getElementById("btnTop");
 
-    //--Boton hacia arriba
-    const btnTop = document.getElementById("btnTop");
-
-    if (btnTop) {
-        window.addEventListener("scroll", () => {
-            btnTop.style.display = window.scrollY > 200 ? "block" : "none";
-        });
-
-        btnTop.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 150) {
+        btnTop.style.display = "block";
+    } else {
+        btnTop.style.display = "none";
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+btnTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

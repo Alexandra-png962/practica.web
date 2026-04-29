@@ -2,14 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
 <header>
-    <h1 class="titulo">Alexandra Huaman Atencio</h1>
+    <h1 class="titulo">Alexandra Huaman Atencio <span>Web</span></h1>
 </header>
 
 <div class="nav-bg">
@@ -21,25 +25,107 @@
     </nav>
 </div>
 
+<!-- HERO -->
 <section class="hero">
     <div class="contenido-hero">
-        <h2>Diseño y Desarrollo Creativo</h2>
-        <p>Cerro de Pasco</p>
-
-        <!-- BOTÓN IMPORTANTE -->
-        <a class="boton" href="contacto.html">Contactar</a>
+        <h2>Diseño y Desarrollo Web <span>Freelancer</span></h2>
+        <p>Cerro de Pasco, Yanacancha</p>
+        <a class="boton" href="#contacto">Contactar</a>
     </div>
 </section>
-  <button id="btnTop">ir arriba</button>
-         <script src="js/script.js"></script>
+
+<!-- SERVICIOS -->
 <main class="contenedor sombra">
-    <h2>Bienvenida</h2>
-    <p>Desarrolladora web enfocada en crear soluciones modernas.</p>
+
+    <h2>Mis Servicios</h2>
+
+    <div class="servicios">
+
+        <section class="servicio">
+            <h3>Diseño Web</h3>
+            <div class="iconos">
+                <svg width="40" height="40" fill="none" stroke="#fff" stroke-width="2">
+                    <circle cx="20" cy="20" r="15"/>
+                </svg>
+            </div>
+            <p>Diseño moderno adaptable a cualquier dispositivo.</p>
+        </section>
+
+        <section class="servicio">
+            <h3>Aplicaciones Web</h3>
+            <div class="iconos">
+                <svg width="40" height="40" fill="none" stroke="#fff" stroke-width="2">
+                    <rect x="10" y="5" width="20" height="30"/>
+                </svg>
+                <svg width="40" height="40" fill="none" stroke="#fff" stroke-width="2">
+                    <rect x="5" y="10" width="30" height="20"/>
+                </svg>
+            </div>
+            <p>Aplicaciones funcionales para mejorar procesos.</p>
+        </section>
+
+        <section class="servicio">
+            <h3>E-Commerce</h3>
+            <div class="iconos">
+                <svg width="40" height="40" fill="none" stroke="#fff" stroke-width="2">
+                    <circle cx="10" cy="30" r="3"/>
+                    <circle cx="30" cy="30" r="3"/>
+                </svg>
+            </div>
+            <p>Tiendas online seguras y eficientes.</p>
+        </section>
+
+    </div>
+
+    <!-- FORMULARIO PRO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Contáctame llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu Nombre">
+                    </div>
+
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                    </div>
+
+                    <div class="campo">
+                        <label>Correo</label>
+                        <input class="input-text" type="email" placeholder="Tu Email">
+                    </div>
+
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+
 </main>
 
+<button id="btnTop">↑</button>
+
 <footer class="footer">
-    <p>Todos los derechos reservados</p>
+    <p>Todos los derechos reservados - Alexandra Huaman Atencio</p>
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
